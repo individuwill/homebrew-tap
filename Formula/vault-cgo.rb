@@ -29,7 +29,7 @@ class VaultCgo < Formula
   conflicts_with "vault"
   conflicts_with "hashicorp/tap/vault"
 
-  option "netcgo", "Use native C DNS resolution"
+  option "with-netcgo", "Use native C DNS resolution"
 
   def install
     # Needs both `npm` and `python` in PATH
@@ -40,6 +40,7 @@ class VaultCgo < Formula
     params = ["bootstrap", "static-dist", "dev-ui"]
 
     if build.with? "netcgo"
+      ohai "Building with netcgo enabled!"
       ENV["CGO_ENABLED"] = "1"
       params = ["BUILD_TAGS=netcgo", "GO_TAGS=netcgo"] + params
     end
