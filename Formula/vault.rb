@@ -43,6 +43,8 @@ class Vault < Formula
     ENV.prepend_path "PATH", Formula["node@18"].opt_libexec/"bin"
     ENV.prepend_path "PATH", Formula["python@3.10"].opt_libexec/"bin" if OS.mac?
     ENV.prepend_path "PATH", "#{ENV["GOPATH"]}/bin"
+    system "git", "clone", "https://github.com/hashicorp/vault.git"
+    system "cd", "vault"
     if build.with? "netcgo"
       ENV["CGO_ENABLED"] = "1"
       system "make", "BUILD_TAGS=netcgo", "GO_TAGS=netcgo", "bootstrap", "static-dist", "dev-ui"
