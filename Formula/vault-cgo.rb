@@ -1,15 +1,15 @@
 # Please don't update this formula until the release is official via
 # mailing list or blog post. There's a history of GitHub tags moving around.
 # https://github.com/hashicorp/vault/issues/1051
-class Vault < Formula
+class VaultCGO < Formula
   desc "Secures, stores, and tightly controls access to secrets"
-  homepage "https://github.com/individuwill/homebrew-vault-cgo"
+  homepage "https://github.com/individuwill/homebrew-tap"
   # TODO: Migrate to `python@3.11` in v1.13
   url "https://github.com/hashicorp/vault.git",
       tag:      "v1.12.2",
       revision: "415e1fe3118eebd5df6cb60d13defdc01aa17b03"
   license "MPL-2.0"
-  head "https://github.com/individuwill/homebrew-vault-cgo.git", branch: "main"
+  head "https://github.com/individuwill/homebrew-tap.git", branch: "main"
 
   livecheck do
     url "https://releases.hashicorp.com/vault/"

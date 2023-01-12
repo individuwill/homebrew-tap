@@ -2,9 +2,9 @@
 
 ## How do I install these formulae?
 
-`brew install individuwill/vault-cgo/<formula>`
+`brew install individuwill/tap/<formula>`
 
-Or `brew tap individuwill/vault-cgo` and then `brew install <formula>`.
+Or `brew tap individuwill/tap` and then `brew install <formula>`.
 
 ## Documentation
 
