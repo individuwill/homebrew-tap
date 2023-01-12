@@ -3,13 +3,13 @@
 # https://github.com/hashicorp/vault/issues/1051
 class Vault < Formula
   desc "Secures, stores, and tightly controls access to secrets"
-  homepage "https://vaultproject.io/"
+  homepage "https://github.com/individuwill/homebrew-vault-cgo"
   # TODO: Migrate to `python@3.11` in v1.13
-  url "https://github.com/hashicorp/vault.git",
-      tag:      "v1.12.2",
+  url "https://individuwill/homebrew-vault-cgo.git",
+      tag:      "v0.0.1",
       revision: "415e1fe3118eebd5df6cb60d13defdc01aa17b03"
   license "MPL-2.0"
-  head "https://github.com/hashicorp/vault.git", branch: "main"
+  head "https://individuwill/homebrew-vault-cgo.git", branch: "main"
 
   livecheck do
     url "https://releases.hashicorp.com/vault/"
