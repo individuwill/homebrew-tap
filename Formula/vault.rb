@@ -6,8 +6,9 @@ class Vault < Formula
   homepage "https://github.com/individuwill/homebrew-vault-cgo"
   # TODO: Migrate to `python@3.11` in v1.13
   url "https://individuwill/homebrew-vault-cgo.git",
-      tag:      "v0.0.1",
-      revision: "415e1fe3118eebd5df6cb60d13defdc01aa17b03"
+      tag:      "v0.0.1"
+      #,
+      #revision: "415e1fe3118eebd5df6cb60d13defdc01aa17b03"
   license "MPL-2.0"
   head "https://individuwill/homebrew-vault-cgo.git", branch: "main"
 
